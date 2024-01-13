@@ -70,6 +70,3 @@ def upload():
 
     # Return the processed image to the user
     return send_file(temp_output_path, mimetype='image/png', as_attachment=True, download_name=original_filename.split('.')[0]+'.png')
-
-if __name__ == '__main__':
-  app.run(port=5000)
